@@ -58,4 +58,4 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-Sitemap: https://keshiba1.github.io/sitemap.xml
+Sitemap: https://jasminechoudhari.com/sitemap.xml

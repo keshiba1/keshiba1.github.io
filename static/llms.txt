@@ -4,14 +4,14 @@
 
 ## About
 
-- [About Jasmine](https://keshiba1.github.io/about/)
+- [About Jasmine](https://jasminechoudhari.com/about/)
 - [YouTube channel](https://www.youtube.com/@jasminechoudhari)
 
 ## Posts
 
-- [All posts](https://keshiba1.github.io/posts/)
+- [All posts](https://jasminechoudhari.com/posts/)
 
 ## Optional
 
-- [Sitemap](https://keshiba1.github.io/sitemap.xml)
-- [RSS](https://keshiba1.github.io/index.xml)
+- [Sitemap](https://jasminechoudhari.com/sitemap.xml)
+- [RSS](https://jasminechoudhari.com/index.xml)
