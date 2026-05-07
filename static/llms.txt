@@ -1,0 +1,17 @@
+# Jasmine Choudhari
+
+> Practical, low-cost kitchen and home organisation guidance for Indian homes — small kitchens, rental flats, 1BHKs, Indian-pantry storage, kitchen gadgets. Based on the YouTube channel @jasminechoudhari.
+
+## About
+
+- [About Jasmine](https://keshiba1.github.io/about/)
+- [YouTube channel](https://www.youtube.com/@jasminechoudhari)
+
+## Posts
+
+- [All posts](https://keshiba1.github.io/posts/)
+
+## Optional
+
+- [Sitemap](https://keshiba1.github.io/sitemap.xml)
+- [RSS](https://keshiba1.github.io/index.xml)

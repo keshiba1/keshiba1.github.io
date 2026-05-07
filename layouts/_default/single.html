@@ -1,0 +1,31 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  <p class="post-meta">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+  </p>
+
+  {{ .Content }}
+
+  {{ with .Params.youtube }}
+  <h2>Watch the video</h2>
+  <div class="youtube-embed">
+    <iframe src="https://www.youtube.com/embed/{{ .id }}" title="{{ $.Title }}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  {{ end }}
+
+  {{ with .Params.faqs }}
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    {{ range . }}
+    <h3>{{ .q }}</h3>
+    <p>{{ .a }}</p>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <hr>
+  <h2>About Jasmine Choudhari</h2>
+  <p>Jasmine Choudhari shares practical, no-frills ideas for organising small Indian kitchens and homes on her YouTube channel <a href="{{ .Site.Params.channelURL }}" rel="me noopener">{{ .Site.Params.channelHandle }}</a>. This site translates her video tips into searchable, AI-friendly written form.</p>
+</article>
+{{ end }}

@@ -1,0 +1,23 @@
+{{ define "main" }}
+<section>
+  <h1>{{ .Site.Title }}</h1>
+  <p class="post-meta">{{ .Site.Params.description }}</p>
+  <p>Companion site for the YouTube channel <a href="{{ .Site.Params.channelURL }}" rel="me noopener">{{ .Site.Params.channelHandle }}</a> — practical, low-cost ideas for organising kitchens and homes in Indian rentals, 1BHKs and small spaces.</p>
+</section>
+<section>
+  <h2>Latest posts</h2>
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ if $posts }}
+  <ul class="post-list">
+    {{ range first 12 $posts }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    </li>
+    {{ end }}
+  </ul>
+  {{ else }}
+  <p><em>Posts will appear here as they are published.</em></p>
+  {{ end }}
+</section>
+{{ end }}

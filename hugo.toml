@@ -1,0 +1,37 @@
+baseURL = "https://keshiba1.github.io/"
+title = "Jasmine Choudhari"
+defaultContentLanguage = "en"
+
+[languages.en]
+  languageCode = "en-IN"
+  languageName = "English"
+  weight = 1
+
+enableRobotsTXT = true
+enableEmoji = false
+enableGitInfo = false
+
+[params]
+  description = "Practical kitchen and home organization for Indian homes — small kitchens, rentals, 1BHKs, pantry organization, kitchen gadgets."
+  authorName = "Jasmine Choudhari"
+  channelHandle = "@jasminechoudhari"
+  channelURL = "https://www.youtube.com/@jasminechoudhari"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+
+[permalinks]
+  posts = "/posts/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

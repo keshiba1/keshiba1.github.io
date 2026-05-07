@@ -1,0 +1,81 @@
+{{- $desc := or .Description .Site.Params.description -}}
+{{- $img := "" -}}
+{{- with .Params.youtube -}}{{ $img = .thumbnail }}{{- end -}}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ .Title | default .Site.Title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="en_IN">
+{{- with $img }}<meta property="og:image" content="{{ . }}">{{ end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title | default .Site.Title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+{{- with $img }}<meta name="twitter:image" content="{{ . }}">{{ end }}
+
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"{{ .Site.Title }}",
+  "url":"{{ .Site.BaseURL }}",
+  "description":"{{ $desc }}",
+  "inLanguage":"en-IN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"{{ .Site.Params.authorName }}",
+  "url":"{{ .Site.BaseURL }}",
+  "sameAs":["{{ .Site.Params.channelURL }}"]
+}
+</script>
+{{- end }}
+
+{{- if and .IsPage .Params.youtube }}
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":{{ .Title | jsonify }},
+  "description":{{ $desc | jsonify }},
+  "datePublished":"{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified":"{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "inLanguage":"en-IN",
+  {{ with .Params.youtube }}{{ with .thumbnail }}"image":{{ . | jsonify }},{{ end }}{{ end }}
+  "mainEntityOfPage":{{ .Permalink | jsonify }},
+  "author":{"@type":"Person","name":{{ .Site.Params.authorName | jsonify }}}
+}
+</script>
+{{- with .Params.youtube }}
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"VideoObject",
+  "name":{{ $.Title | jsonify }},
+  "description":{{ $desc | jsonify }},
+  {{ with .thumbnail }}"thumbnailUrl":{{ . | jsonify }},{{ end }}
+  {{ with .published_at }}"uploadDate":{{ . | jsonify }},{{ end }}
+  {{ with .duration_iso }}"duration":{{ . | jsonify }},{{ end }}
+  "contentUrl":{{ .url | jsonify }},
+  "embedUrl":{{ printf "https://www.youtube.com/embed/%s" .id | jsonify }}
+}
+</script>
+{{- end }}
+{{- with .Params.faqs }}
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {{- range $i, $f := . }}{{ if $i }},{{ end }}
+    {"@type":"Question","name":{{ $f.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ $f.a | jsonify }}}}
+    {{- end }}
+  ]
+}
+</script>
+{{- end }}
+{{- end }}

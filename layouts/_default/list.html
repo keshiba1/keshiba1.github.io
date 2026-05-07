@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section>
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="post-meta">{{ . }}</p>{{ end }}
+  {{ .Content }}
+  {{ $pages := where .RegularPagesRecursive "Section" "posts" }}
+  {{ if $pages }}
+  <ul class="post-list">
+    {{ range $pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    </li>
+    {{ end }}
+  </ul>
+  {{ else }}
+  <p><em>No posts yet.</em></p>
+  {{ end }}
+</section>
+{{ end }}

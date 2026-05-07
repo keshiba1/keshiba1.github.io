@@ -1,0 +1,23 @@
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Editors
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Anything stray from siblings (defence in depth — none should ever live here)
+**/data/*.db
+**/data/transcripts/
+**/data/whisper-models/
+**/logs/
