@@ -2,6 +2,11 @@ baseURL = "https://jasminechoudhari.com/"
 title = "Jasmine Choudhari"
 defaultContentLanguage = "en"
 
+# Site-wide noindex: keeps crawlers from indexing the site while real
+# content is still being built. Flip noindexSite=false in [params] and
+# delete this disableKinds line when first real posts land.
+disableKinds = ["sitemap"]
+
 [languages.en]
   languageCode = "en-IN"
   languageName = "English"
@@ -15,6 +20,7 @@ enableGitInfo = false
   authorName = "Jasmine Choudhari"
   channelHandle = "@jasminechoudhari"
   channelURL = "https://www.youtube.com/@jasminechoudhari"
+  noindexSite = true
 
 [outputs]
   home = ["HTML", "RSS"]

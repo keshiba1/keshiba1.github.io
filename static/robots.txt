@@ -58,4 +58,7 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-Sitemap: https://jasminechoudhari.com/sitemap.xml
+# Sitemap intentionally omitted while site is in noindex mode (no real
+# content yet). Re-add `Sitemap: https://jasminechoudhari.com/sitemap.xml`
+# when the noindexSite flag in hugo.toml is flipped off and sitemap is
+# re-enabled.
