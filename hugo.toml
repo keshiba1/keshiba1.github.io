@@ -7,7 +7,6 @@ defaultContentLanguage = "en"
   languageName = "English"
   weight = 1
 
-enableRobotsTXT = true
 enableEmoji = false
 enableGitInfo = false
 
