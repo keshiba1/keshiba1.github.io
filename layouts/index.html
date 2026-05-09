@@ -1,8 +1,15 @@
 {{ define "main" }}
-<section>
-  <h1>{{ .Site.Title }}</h1>
-  <p class="post-meta">{{ .Site.Params.description }}</p>
-  <p>Companion site for the YouTube channel <a href="{{ .Site.Params.channelURL }}" rel="me noopener">{{ .Site.Params.channelHandle }}</a> — practical, low-cost ideas for organising kitchens and homes in Indian rentals, 1BHKs and small spaces.</p>
+<section class="hero">
+  <img src="/images/jasmine-silver-play-button.jpg"
+       alt="Jasmine Choudhari with her YouTube Silver Play Button for 100,000 subscribers"
+       width="240" height="240"
+       loading="eager"
+       class="hero-photo">
+  <div class="hero-text">
+    <h1>{{ .Site.Title }}</h1>
+    <p class="post-meta">{{ .Site.Params.description }}</p>
+    <p>Companion site for the YouTube channel <a href="{{ .Site.Params.channelURL }}" rel="me noopener">{{ .Site.Params.channelHandle }}</a> — practical, low-cost ideas for organising kitchens and homes in Indian rentals, 1BHKs and small spaces.</p>
+  </div>
 </section>
 <section>
   <h2>Latest posts</h2>

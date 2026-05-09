@@ -25,7 +25,16 @@
   {{ end }}
 
   <hr>
-  <h2>About Jasmine Choudhari</h2>
-  <p>Jasmine Choudhari shares practical, no-frills ideas for organising small Indian kitchens and homes on her YouTube channel <a href="{{ .Site.Params.channelURL }}" rel="me noopener">{{ .Site.Params.channelHandle }}</a>.</p>
+  <section class="about-author">
+    <img src="/images/jasmine-silver-play-button.jpg"
+         alt="Jasmine Choudhari with her YouTube Silver Play Button for 100,000 subscribers"
+         width="160" height="160"
+         loading="lazy"
+         class="author-photo">
+    <div>
+      <h2>About Jasmine Choudhari</h2>
+      <p>Jasmine Choudhari shares practical, no-frills ideas for organising small Indian kitchens and homes on her YouTube channel <a href="{{ .Site.Params.channelURL }}" rel="me noopener">{{ .Site.Params.channelHandle }}</a>.</p>
+    </div>
+  </section>
 </article>
 {{ end }}
