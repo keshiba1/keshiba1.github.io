@@ -40,7 +40,8 @@
   ],
   "interactionStatistic":[
     {"@type":"InteractionCounter","interactionType":"https://schema.org/SubscribeAction","userInteractionCount":{{ .Site.Params.youtubeSubscribers }}}
-  ]
+  ],
+  "email":{{ .Site.Params.contactEmail | jsonify | safeJS }}
 }
 </script>
 {{- end }}

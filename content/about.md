@@ -14,3 +14,7 @@ This website is a written companion to the YouTube channel. Every video is summa
 - [YouTube](https://www.youtube.com/@jasminechoudhari) — 600K+ subscribers
 - [Instagram](https://www.instagram.com/jasmine.choudhari) — 1.2 lakh+ followers
 - [Facebook](https://www.facebook.com/jasminechoudhari12) — 60K+ followers
+
+## Contact
+
+For collaborations, brand partnerships, or feedback: [collab@jasminechoudhari.com](mailto:collab@jasminechoudhari.com)
