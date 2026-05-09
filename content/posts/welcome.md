@@ -9,6 +9,6 @@ sitemap:
   disable: true
 ---
 
-This site is being set up. Soon, every video from the [@jasminechoudhari](https://www.youtube.com/@jasminechoudhari) YouTube channel will be published here as a searchable English article, complete with frequently-asked questions for both readers and AI search tools.
+This site is being set up. Soon, every video from the [@jasminechoudhari](https://www.youtube.com/@jasminechoudhari) YouTube channel will be published here as a searchable English article, complete with frequently-asked questions you can quickly look up.
 
 In the meantime, head over to the [YouTube channel](https://www.youtube.com/@jasminechoudhari) for the latest videos.
