@@ -28,9 +28,19 @@
 {
   "@context":"https://schema.org",
   "@type":"Person",
-  "name":"{{ .Site.Params.authorName }}",
-  "url":"{{ .Site.BaseURL }}",
-  "sameAs":["{{ .Site.Params.channelURL }}"]
+  "name":{{ .Site.Params.authorName | jsonify | safeJS }},
+  "url":{{ .Site.BaseURL | jsonify | safeJS }},
+  "image":{{ printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) .Site.Params.authorPhoto | jsonify | safeJS }},
+  "jobTitle":"Kitchen and home organization content creator",
+  "knowsAbout":["Indian kitchen organization","small kitchen storage","rental kitchen tips","home decluttering","budget kitchen hacks","pantry organization"],
+  "sameAs":[
+    {{ .Site.Params.channelURL | jsonify | safeJS }},
+    {{ .Site.Params.instagramURL | jsonify | safeJS }},
+    {{ .Site.Params.facebookURL | jsonify | safeJS }}
+  ],
+  "interactionStatistic":[
+    {"@type":"InteractionCounter","interactionType":"https://schema.org/SubscribeAction","userInteractionCount":{{ .Site.Params.youtubeSubscribers }}}
+  ]
 }
 </script>
 {{- end }}
@@ -47,7 +57,17 @@
   "inLanguage":"en-IN",
   {{ with .Params.youtube }}{{ with .thumbnail }}"image":{{ . | jsonify | safeJS }},{{ end }}{{ end }}
   "mainEntityOfPage":{{ .Permalink | jsonify | safeJS }},
-  "author":{"@type":"Person","name":{{ .Site.Params.authorName | jsonify | safeJS }}}
+  "author":{
+    "@type":"Person",
+    "name":{{ .Site.Params.authorName | jsonify | safeJS }},
+    "url":{{ .Site.BaseURL | jsonify | safeJS }},
+    "image":{{ printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) .Site.Params.authorPhoto | jsonify | safeJS }},
+    "sameAs":[
+      {{ .Site.Params.channelURL | jsonify | safeJS }},
+      {{ .Site.Params.instagramURL | jsonify | safeJS }},
+      {{ .Site.Params.facebookURL | jsonify | safeJS }}
+    ]
+  }
 }
 </script>
 {{- with .Params.youtube }}

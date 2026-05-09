@@ -18,8 +18,14 @@ enableGitInfo = false
 [params]
   description = "Practical kitchen and home organization for Indian homes — small kitchens, rentals, 1BHKs, pantry organization, kitchen gadgets."
   authorName = "Jasmine Choudhari"
+  authorPhoto = "/images/jasmine-silver-play-button.jpg"
   channelHandle = "@jasminechoudhari"
   channelURL = "https://www.youtube.com/@jasminechoudhari"
+  instagramURL = "https://www.instagram.com/jasmine.choudhari"
+  facebookURL = "https://www.facebook.com/jasminechoudhari12"
+  youtubeSubscribers = 600000
+  silverPlayButton = true
+  channelStartYear = 2019
   noindexSite = true
 
 [outputs]
