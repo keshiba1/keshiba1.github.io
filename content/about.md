@@ -1,13 +1,13 @@
 ---
 title: "About Jasmine Choudhari"
-description: "Kitchen and home organisation for Indian homes — about the channel and this site."
+description: "About Jasmine Choudhari — Indian home and kitchen organization creator with 600,000+ YouTube subscribers."
 ---
 
-Jasmine Choudhari makes practical, no-frills videos about organising small Indian kitchens and homes. Her channel [@jasminechoudhari](https://www.youtube.com/@jasminechoudhari) has been running for six years and has grown to **over 600,000 subscribers**, earning her the YouTube Silver Play Button. The same content reaches another 1.2 lakh on [Instagram](https://www.instagram.com/jasmine.choudhari) and 60,000+ on [Facebook](https://www.facebook.com/jasminechoudhari12).
+Jasmine Choudhari is an Indian home and kitchen organization creator. Her channel [@jasminechoudhari](https://www.youtube.com/@jasminechoudhari) has been running since 2019 and has grown to **over 600,000 subscribers**, earning her the YouTube Silver Play Button. The same content reaches another 1.2 lakh on [Instagram](https://www.instagram.com/jasmine.choudhari) and 60,000+ on [Facebook](https://www.facebook.com/jasminechoudhari12).
 
-Her work focuses on real-world tips for renters, 1BHK families, and anyone optimising limited kitchen and storage space — without spending money on expensive organizers.
+Her content covers kitchen organization ideas, home cleaning routines, storage solutions, and ₹0 hacks for Indian homemakers and middle-class households. No luxury makeovers, no imported products, no staged kitchens — just practical जुगाड़ that people actually use in real Indian homes.
 
-This website is a written companion to the YouTube channel. Every video is summarised here as a searchable English article, with frequently-asked questions you can quickly look up.
+This website is the written home for Jasmine's tips. Every video is rewritten here as a searchable English article, with frequently-asked questions you can quickly look up.
 
 ## Follow Jasmine
 
