@@ -1,9 +1,11 @@
 {{ define "main" }}
 <article>
   <h1>{{ .Title }}</h1>
+  {{ if eq .Section "posts" }}
   <p class="post-meta">
     By <a href="/about/">{{ .Site.Params.authorName }}</a> · 600K+ YouTube subscribers · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
   </p>
+  {{ end }}
 
   {{ .Content }}
 
@@ -24,6 +26,7 @@
   </div>
   {{ end }}
 
+  {{ if eq .Section "posts" }}
   <hr>
   <section class="about-author">
     <img src="/images/jasmine-silver-play-button.jpg"
@@ -36,5 +39,6 @@
       <p>Jasmine Choudhari shares practical, no-frills ideas for organising small Indian kitchens and homes. Follow her on <a href="{{ .Site.Params.channelURL }}" rel="me noopener">YouTube</a> (600K+ subscribers · Silver Play Button), <a href="{{ .Site.Params.instagramURL }}" rel="me noopener">Instagram</a> and <a href="{{ .Site.Params.facebookURL }}" rel="me noopener">Facebook</a>. For collaborations: <a href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a>.</p>
     </div>
   </section>
+  {{ end }}
 </article>
 {{ end }}
