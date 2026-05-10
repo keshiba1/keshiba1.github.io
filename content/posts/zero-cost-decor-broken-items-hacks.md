@@ -3,7 +3,9 @@ title: Zero-Cost Home Decor Hacks Using Broken & Old Items
 date: '2026-05-09T17:24:57Z'
 slug: zero-cost-decor-broken-items-hacks
 language: en
-description: Turn broken baskets, old pots, beach hats and torn bags into beautiful home decor. Zero-rupee Indian home decoration hacks that reuse what you already own.
+description: Turn broken baskets, old pots, beach hats and torn bags into beautiful
+  home decor. Zero-rupee Indian home decoration hacks that reuse what you already
+  own.
 tags:
 - home-decor-hacks
 - upcycling
@@ -12,43 +14,63 @@ tags:
 - budget-decor
 - reuse-old-items
 categories:
-- small-space-living
+- zero-cost-hacks
 topic_clusters:
-- small-space-living
-- rental-home-tips
+- zero-cost-hacks
 youtube:
   id: 5tidZXdu0R0
   url: https://www.youtube.com/watch?v=5tidZXdu0R0
   duration_iso: PT5M17S
   thumbnail: https://i.ytimg.com/vi/5tidZXdu0R0/maxresdefault.jpg
   published_at: '2022-05-26T12:08:23Z'
-  source_title: टुटी फुटी फटी हुई चीजें घर को इतना सुन्दर बना देंगे क्या आप जानते थे|₹0 Hacks That  Changed My Home
+  source_title: टुटी फुटी फटी हुई चीजें घर को इतना सुन्दर बना देंगे क्या आप जानते
+    थे|₹0 Hacks That  Changed My Home
 faqs:
 - q: How can I decorate my home for free using old broken items?
-  a: You can decorate your home at zero cost by repurposing broken baskets, cracked matkas, torn fabric bags, unused beach hats and handle-less teapots as planters, wall hangings and corner decor. Most
-    homes already have these items waiting to be thrown away. Add a fairy light, an artificial plant, or a small money plant bottle inside, and they instantly look like store-bought decor pieces without
+  a: You can decorate your home at zero cost by repurposing broken baskets, cracked
+    matkas, torn fabric bags, unused beach hats and handle-less teapots as planters,
+    wall hangings and corner decor. Most homes already have these items waiting to
+    be thrown away. Add a fairy light, an artificial plant, or a small money plant
+    bottle inside, and they instantly look like store-bought decor pieces without
     spending a single rupee.
 - q: What can I do with a basket that is broken at the bottom?
-  a: Place a broken-bottom basket in a living room, bedroom or kitchen corner and fill it with fairy lights and artificial plants. The broken base stays hidden once the basket is styled, and the lights
-    make any plain corner look bright and decorated. It also works on an open kitchen shelf as a soft, warm accent piece.
+  a: Place a broken-bottom basket in a living room, bedroom or kitchen corner and
+    fill it with fairy lights and artificial plants. The broken base stays hidden
+    once the basket is styled, and the lights make any plain corner look bright and
+    decorated. It also works on an open kitchen shelf as a soft, warm accent piece.
 - q: Can I reuse small Diwali matkas for home decoration?
-  a: Yes, the small clay matkas bought during Diwali for ten to twenty rupees make excellent mini planters for everyday decor. Paint them in any colour you like and place a small plant inside. They look
-    beautiful on coffee tables, dining tables and corner tables, and cost almost nothing compared to buying decorative pots from a shop.
+  a: Yes, the small clay matkas bought during Diwali for ten to twenty rupees make
+    excellent mini planters for everyday decor. Paint them in any colour you like
+    and place a small plant inside. They look beautiful on coffee tables, dining tables
+    and corner tables, and cost almost nothing compared to buying decorative pots
+    from a shop.
 - q: How do I turn a broken tokri or basket into wall decor?
-  a: Cut the broken tokri into a clean round shape and hang it flat on the wall with artificial hanging plants tucked inside. Small tokris arranged this way fill a plain wall beautifully and replace the
-    need for expensive paintings or wall art. You can also half-cover an old tokri with a piece of crochet or unused table-cover fabric and hang it with tiny bottles of money plant inside.
+  a: Cut the broken tokri into a clean round shape and hang it flat on the wall with
+    artificial hanging plants tucked inside. Small tokris arranged this way fill a
+    plain wall beautifully and replace the need for expensive paintings or wall art.
+    You can also half-cover an old tokri with a piece of crochet or unused table-cover
+    fabric and hang it with tiny bottles of money plant inside.
 - q: What should I do with bags whose inner fabric has torn?
-  a: Hang torn-lining bags on the wall as planters instead of throwing them away. Drop a few small pots inside the bag and hang it in any spot that gets good sunlight. The outer fabric still looks fine
-    from the front, and the bag becomes a soft, textured wall planter that adds character to a bedroom or balcony wall.
+  a: Hang torn-lining bags on the wall as planters instead of throwing them away.
+    Drop a few small pots inside the bag and hang it in any spot that gets good sunlight.
+    The outer fabric still looks fine from the front, and the bag becomes a soft,
+    textured wall planter that adds character to a bedroom or balcony wall.
 - q: Can old beach hats be used as home decor?
-  a: Yes, beach hats that sit unused after a vacation make charming planter holders for the living room. Place a small pot inside the hat and tie lace around the rim to hide the pot. The result is a fresh,
-    new-looking decor piece that gives a vacation feel to your room without buying anything extra.
+  a: Yes, beach hats that sit unused after a vacation make charming planter holders
+    for the living room. Place a small pot inside the hat and tie lace around the
+    rim to hide the pot. The result is a fresh, new-looking decor piece that gives
+    a vacation feel to your room without buying anything extra.
 - q: How can I hide ugly plant bottles when displaying money plants?
-  a: Cut an old paint container, cover it with leftover fabric from an old frock or dupatta, and place your money plant bottles inside it as one neat group. This way you do not have to lift each bottle
-    individually while dusting, and the messy bottles stay completely hidden behind a coordinated fabric-wrapped container.
+  a: Cut an old paint container, cover it with leftover fabric from an old frock or
+    dupatta, and place your money plant bottles inside it as one neat group. This
+    way you do not have to lift each bottle individually while dusting, and the messy
+    bottles stay completely hidden behind a coordinated fabric-wrapped container.
 - q: Why should I avoid buying expensive decorative items from the market?
-  a: Most decorative pieces sold in the market can be made at home for free using items you already own, like broken teapots, old baskets and unused hats. A handle-less teapot filled with colourful stones
-    and a small plant looks just as good as a costly showpiece. Reusing what you have is cheaper, more personal and reduces waste.
+  a: Most decorative pieces sold in the market can be made at home for free using
+    items you already own, like broken teapots, old baskets and unused hats. A handle-less
+    teapot filled with colourful stones and a small plant looks just as good as a
+    costly showpiece. Reusing what you have is cheaper, more personal and reduces
+    waste.
 generated:
   prompt_version: generate_post_v1
   model: claude-opus-4-7

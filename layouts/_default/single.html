@@ -3,17 +3,27 @@
   <h1>{{ .Title }}</h1>
   {{ if eq .Section "posts" }}
   <p class="post-meta">
-    By <a href="/about/">{{ .Site.Params.authorName }}</a> · 600K+ YouTube subscribers · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    {{ if .Params.tips_guide }}<strong class="tips-guide-badge">Tips Guide</strong> · {{ end }}By <a href="/about/">{{ .Site.Params.authorName }}</a> · 600K+ YouTube subscribers · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
   </p>
   {{ end }}
 
   {{ .Content }}
 
   {{ with .Params.youtube }}
-  <h2>Watch the video</h2>
+  <h2>{{ if $.Params.tips_guide }}Featured video{{ else }}Watch the video{{ end }}</h2>
   <div class="youtube-embed">
     <iframe src="https://www.youtube.com/embed/{{ .id }}" title="{{ $.Title }}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
   </div>
+  {{ end }}
+
+  {{ if .Params.synthesized_from }}
+  <h2>Videos covered in this guide</h2>
+  <p>This guide synthesizes tips from the following YouTube Shorts by Jasmine Choudhari:</p>
+  <ul class="videos-covered">
+    {{ range .Params.synthesized_from }}
+    <li><a href="https://www.youtube.com/watch?v={{ . }}" rel="noopener">youtube.com/watch?v={{ . }}</a></li>
+    {{ end }}
+  </ul>
   {{ end }}
 
   {{ with .Params.faqs }}

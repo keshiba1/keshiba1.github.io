@@ -3,7 +3,8 @@ title: 10 Easy Indian Kitchen & Home Tips That Cost Almost Nothing
 date: '2026-05-09T17:33:54Z'
 slug: indian-kitchen-home-tips-tricks
 language: en
-description: 'Ten practical Indian kitchen and home tips: remove container smells with newspaper, stop onion tears, organise umbrellas with old socks, and more.'
+description: 'Ten practical Indian kitchen and home tips: remove container smells
+  with newspaper, stop onion tears, organise umbrellas with old socks, and more.'
 tags:
 - kitchen-tips
 - newspaper-hacks
@@ -12,42 +13,56 @@ tags:
 - odour-removal
 - indian-cooking-tips
 categories:
-- kitchen-organization
+- kitchen-and-home-tips
 topic_clusters:
-- kitchen-organization
-- kitchen-gadgets
+- kitchen-and-home-tips
 youtube:
   id: rAFzyR7a-gA
   url: https://www.youtube.com/watch?v=rAFzyR7a-gA
   duration_iso: PT7M32S
   thumbnail: https://i.ytimg.com/vi/rAFzyR7a-gA/maxresdefault.jpg
   published_at: '2022-03-04T13:19:37Z'
-  source_title: 10 New Amazing Kitchen Tips & Tricks जो आपको रोजाना किचन और घर के काम में आएंगे। Useful Home जुगाड़
+  source_title: 10 New Amazing Kitchen Tips & Tricks जो आपको रोजाना किचन और घर के
+    काम में आएंगे। Useful Home जुगाड़
 faqs:
 - q: How do I remove the smell from old plastic containers and jars?
-  a: Stuff a crushed newspaper ball inside the container, close it, and leave it for about half an hour. The newspaper absorbs trapped food odours so even containers that smelled stubbornly after washing
-    come out neutral. This works on jars, dabbas and reused glass containers without any chemicals or extra cost.
+  a: Stuff a crushed newspaper ball inside the container, close it, and leave it for
+    about half an hour. The newspaper absorbs trapped food odours so even containers
+    that smelled stubbornly after washing come out neutral. This works on jars, dabbas
+    and reused glass containers without any chemicals or extra cost.
 - q: How can I get rid of onion or garlic smell from my fridge?
-  a: Lightly dampen a sheet of newspaper, crush it into a ball, and place it inside the fridge for 15–30 minutes. The wet newspaper pulls in onion, garlic and general food odours, and the fridge smells
-    clean again with no scrubbing or sprays needed.
+  a: Lightly dampen a sheet of newspaper, crush it into a ball, and place it inside
+    the fridge for 15–30 minutes. The wet newspaper pulls in onion, garlic and general
+    food odours, and the fridge smells clean again with no scrubbing or sprays needed.
 - q: How do I clean the smell of dal and masala out of a mixer jar?
-  a: Tear a few pieces of newspaper into the mixer jar, add a little water, and run the mixer for a few seconds. Then wash the jar normally. The newspaper lifts out the lingering smell of *dal*, *masala*
-    and spices that ordinary washing leaves behind.
+  a: Tear a few pieces of newspaper into the mixer jar, add a little water, and run
+    the mixer for a few seconds. Then wash the jar normally. The newspaper lifts out
+    the lingering smell of *dal*, *masala* and spices that ordinary washing leaves
+    behind.
 - q: How can I cut onions without my eyes burning?
-  a: Slice off just the top and bottom of the onion, leave the skin on, and soak it in water for a few minutes before chopping. The water draws out the sharp sulphur compounds that irritate your eyes, so
-    when you finally cut the onion there is almost no sting.
+  a: Slice off just the top and bottom of the onion, leave the skin on, and soak it
+    in water for a few minutes before chopping. The water draws out the sharp sulphur
+    compounds that irritate your eyes, so when you finally cut the onion there is
+    almost no sting.
 - q: Can I peel garlic more easily using the same trick?
-  a: Yes — drop whole garlic cloves into the same bowl of water you are using to soak the onions. After a few minutes the skins soften and slip off cleanly, so you can peel garlic in seconds instead of
-    picking at dry papery skin.
+  a: Yes — drop whole garlic cloves into the same bowl of water you are using to soak
+    the onions. After a few minutes the skins soften and slip off cleanly, so you
+    can peel garlic in seconds instead of picking at dry papery skin.
 - q: Why does my sabzi turn brown or lose its colour while cooking?
-  a: Vegetables lose colour when they are drowned in too much water or overcooked in *masala*. Sauté the *sabzi* briefly in the masala first, then add small splashes of lukewarm water as needed instead
-    of one large pour. Using as little water as possible keeps the natural colour bright and the flavour concentrated.
+  a: Vegetables lose colour when they are drowned in too much water or overcooked
+    in *masala*. Sauté the *sabzi* briefly in the masala first, then add small splashes
+    of lukewarm water as needed instead of one large pour. Using as little water as
+    possible keeps the natural colour bright and the flavour concentrated.
 - q: What is an easy way to organise umbrellas at home?
-  a: Slide each umbrella into an old sock before storing it. The sock keeps dust off the fabric, the umbrellas stack neatly without tangling, and your entryway stops looking cluttered. The covered umbrella
-    also takes up less space inside a bag when you carry it out.
+  a: Slide each umbrella into an old sock before storing it. The sock keeps dust off
+    the fabric, the umbrellas stack neatly without tangling, and your entryway stops
+    looking cluttered. The covered umbrella also takes up less space inside a bag
+    when you carry it out.
 - q: How can I reuse old containers and glasses instead of throwing them away?
-  a: Cover any old jar, bottle or glass with an old sock and use it as a free organiser. The sock hides scratches and labels, and the container becomes a holder for stationery, kids' supplies, or bathroom
-    items like toothbrushes and combs. It is a zero-cost way to declutter without buying new organisers.
+  a: Cover any old jar, bottle or glass with an old sock and use it as a free organiser.
+    The sock hides scratches and labels, and the container becomes a holder for stationery,
+    kids' supplies, or bathroom items like toothbrushes and combs. It is a zero-cost
+    way to declutter without buying new organisers.
 generated:
   prompt_version: generate_post_v1
   model: claude-opus-4-7
