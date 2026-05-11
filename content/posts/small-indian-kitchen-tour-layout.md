@@ -1,6 +1,6 @@
 ---
 title: 'Indian Kitchen Tour: How a Small Organized Kitchen Is Laid Out'
-date: '2026-05-10T09:49:20Z'
+date: '2026-05-11T08:45:14Z'
 slug: small-indian-kitchen-tour-layout
 language: en
 description: A walkthrough of a small Indian kitchen organized zone by zone — entrance, counters, cabinets, trolleys and sink — with empty counters and everything tucked inside.
