@@ -10,6 +10,8 @@ defaultContentLanguage = "en"
 enableEmoji = false
 enableGitInfo = false
 
+disableKinds = ["taxonomy", "term"]
+
 [params]
   description = "Practical Indian kitchen and home organization for homemakers — kitchen ideas, cleaning routines, storage, and ₹0 hacks by Jasmine Choudhari."
   authorName = "Jasmine Choudhari"
