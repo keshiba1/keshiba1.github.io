@@ -1,0 +1,35 @@
+# {{ .Site.Title }}
+
+> {{ .Site.Params.description }} Jasmine Choudhari is the creator behind the {{ .Site.Params.youtubeSubscribers }}+ subscriber YouTube channel {{ .Site.Params.channelHandle }}, awarded the YouTube Silver Play Button, with 1.2 lakh+ followers on Instagram and 60K+ on Facebook.
+
+## About
+
+- [About Jasmine Choudhari]({{ "/about/" | absURL }}): Background, credentials, and contact information for collaborations.
+- [YouTube channel]({{ .Site.Params.channelURL }}): Original video content (600K+ subscribers, Silver Play Button awardee).
+- [Instagram]({{ .Site.Params.instagramURL }}): 1.2 lakh+ followers.
+- [Facebook]({{ .Site.Params.facebookURL }}): 60K+ followers.
+
+## Posts
+
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ range $posts }}- [{{ .Title }}]({{ .Permalink }}): {{ with .Description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}
+{{ end }}
+
+## Topics covered
+
+- Indian kitchen organization and storage
+- Home cleaning routines and habits for Indian homemakers
+- Zero-cost (₹0) home and kitchen hacks using reuse and repurposing
+- Kitchen organizer reviews and recommendations (what to buy, what not to buy)
+- Decluttering and small-space organization for Indian homes
+- Seasonal cleaning and organization (summer, monsoon, winter, Diwali)
+- Time-saving homemaker habits and routines
+
+## Contact
+
+- Email: {{ .Site.Params.contactEmail }}
+
+## Optional
+
+- [Sitemap]({{ "/sitemap.xml" | absURL }})
+- [RSS feed]({{ "/index.xml" | absURL }})

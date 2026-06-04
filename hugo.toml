@@ -28,9 +28,15 @@ disableKinds = ["taxonomy", "term"]
   indexnowKey = "0f5e68a4f4c8bd8d1bb364a5e8d3ba99"
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "LLMS"]
   page = ["HTML"]
   section = ["HTML", "RSS"]
+
+[outputFormats.LLMS]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  notAlternative = true
 
 [markup.goldmark.renderer]
   unsafe = true
