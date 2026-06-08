@@ -1,0 +1,10 @@
+{{- /* GA4 — only emits in production builds when params.ga4Id is set. */ -}}
+{{- if and hugo.IsProduction site.Params.ga4Id -}}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.ga4Id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.Params.ga4Id }}');
+</script>
+{{- end -}}

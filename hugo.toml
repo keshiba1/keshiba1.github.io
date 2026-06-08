@@ -27,6 +27,7 @@ disableKinds = ["taxonomy", "term"]
   channelStartYear = 2019
   noindexSite = false
   indexnowKey = "0f5e68a4f4c8bd8d1bb364a5e8d3ba99"
+  ga4Id = "G-DC731J287B"
 
 [outputs]
   home = ["HTML", "RSS", "LLMS"]
