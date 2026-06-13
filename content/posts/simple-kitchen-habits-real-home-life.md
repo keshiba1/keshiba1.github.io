@@ -1,6 +1,6 @@
 ---
 title: Simple Kitchen Habits for a Calm, Real-Life Indian Home
-date: '2026-06-12T04:39:16Z'
+date: '2026-06-13T07:19:19Z'
 slug: simple-kitchen-habits-real-home-life
 language: en
 description: Practical Indian kitchen habits for handling broken appliances, hand-washing dishes, removing utensil stickers, and smart D-Mart shopping without overspending.
