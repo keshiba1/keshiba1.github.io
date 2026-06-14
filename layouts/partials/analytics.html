@@ -6,5 +6,16 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', '{{ site.Params.ga4Id }}');
+
+  // Outbound YouTube click tracking (blog -> YT uplift signal).
+  // Captures any click on a youtube.com/youtu.be link in the page.
+  // Fires 'yt_click'; GA4 attaches page_path automatically.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (!/^(https?:)?\/\/(www\.)?(youtube\.com|youtu\.be)/i.test(href)) return;
+    try { gtag('event', 'yt_click', { link_url: href, link_domain: 'youtube.com', outbound: true }); } catch (err) {}
+  }, true);
 </script>
 {{- end -}}

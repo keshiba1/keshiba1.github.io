@@ -12,8 +12,50 @@
   {{ with .Params.youtube }}
   <h2>{{ if $.Params.tips_guide }}Featured video{{ else }}Watch the video{{ end }}</h2>
   <div class="youtube-embed">
-    <iframe src="https://www.youtube.com/embed/{{ .id }}" title="{{ $.Title }}" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    <iframe id="yt-player-{{ .id }}" data-video-id="{{ .id }}"
+      src="https://www.youtube.com/embed/{{ .id }}?enablejsapi=1"
+      title="{{ $.Title }}"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen loading="lazy"></iframe>
   </div>
+  {{ if and hugo.IsProduction site.Params.ga4Id }}
+  <script>
+    // yt_play uplift event — fires once per page when the embed actually starts playing.
+    // No-op in dev (no gtag). Loads YT IFrame API on demand; defensive against any failure.
+    (function () {
+      var VIDEO_ID = "{{ .id }}";
+      var fired = false;
+      function ready(cb) {
+        if (window.YT && window.YT.Player) return cb();
+        if (!document.querySelector('script[src*="youtube.com/iframe_api"]')) {
+          var tag = document.createElement('script');
+          tag.src = "https://www.youtube.com/iframe_api";
+          document.head.appendChild(tag);
+        }
+        var prev = window.onYouTubeIframeAPIReady;
+        window.onYouTubeIframeAPIReady = function () {
+          if (typeof prev === 'function') { try { prev(); } catch (e) {} }
+          cb();
+        };
+      }
+      ready(function () {
+        try {
+          new YT.Player('yt-player-' + VIDEO_ID, {
+            events: {
+              'onStateChange': function (e) {
+                if (fired) return;
+                if (e.data === YT.PlayerState.PLAYING) {
+                  fired = true;
+                  try { gtag('event', 'yt_play', { video_id: VIDEO_ID, watch_type: 'embed' }); } catch (err) {}
+                }
+              }
+            }
+          });
+        } catch (err) {}
+      });
+    })();
+  </script>
+  {{ end }}
   {{ end }}
 
   {{ if .Params.synthesized_from }}
