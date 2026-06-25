@@ -1,6 +1,6 @@
 ---
 title: 20 Smart Kitchen Habits to Cut Cleaning Work by 90%
-date: '2026-06-25T10:15:56Z'
+date: '2026-06-25T10:38:02Z'
 slug: smart-kitchen-cleaning-habits-indian-homemakers
 language: en
 description: 'Smart kitchen habits for Indian homemakers: clean your counter, sink and gas burner faster after cooking with simple routines that cut daily work.'
@@ -19,7 +19,7 @@ youtube:
   id: 7XHKZx59w5k
   url: https://www.youtube.com/watch?v=7XHKZx59w5k
   duration_iso: PT10M55S
-  thumbnail: https://i.ytimg.com/vi/7XHKZx59w5k/maxresdefault.jpg
+  thumbnail: https://i.ytimg.com/vi/7XHKZx59w5k/hqdefault.jpg
   published_at: '2026-06-25T09:45:33Z'
   source_title: 90% काम कम हो जाएगा अगर आज से ये 20 Kitchen Habits अपनाएंगे | Smart Kitchen Habits Indian Homemakers
 faqs:
