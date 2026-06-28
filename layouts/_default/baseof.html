@@ -7,6 +7,7 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="icon" type="image/svg+xml" href="{{ "/favicon.svg" | relURL }}">
+  <meta name="p:domain_verify" content="139bed8dd4f1ba69962b246bbe27dc4a"/>
   {{ if or .Params.noindex .Site.Params.noindexSite (eq .Kind "term") (eq .Kind "taxonomy") }}<meta name="robots" content="noindex, follow">{{ end }}
   {{ partial "seo-meta.html" . }}
   {{ block "head" . }}{{ end }}
