@@ -8,6 +8,7 @@
 - [YouTube channel]({{ .Site.Params.channelURL }}): Original video content (600K+ subscribers, Silver Play Button awardee).
 - [Instagram]({{ .Site.Params.instagramURL }}): 1.2 lakh+ followers.
 - [Facebook]({{ .Site.Params.facebookURL }}): 60K+ followers.
+- [Pinterest]({{ .Site.Params.pinterestURL }}): Kitchen and home organization idea pins.
 
 ## Posts
 
