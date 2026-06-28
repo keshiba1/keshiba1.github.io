@@ -36,7 +36,8 @@
   "sameAs":[
     {{ .Site.Params.channelURL | jsonify | safeJS }},
     {{ .Site.Params.instagramURL | jsonify | safeJS }},
-    {{ .Site.Params.facebookURL | jsonify | safeJS }}
+    {{ .Site.Params.facebookURL | jsonify | safeJS }},
+    {{ .Site.Params.pinterestURL | jsonify | safeJS }}
   ],
   "interactionStatistic":[
     {"@type":"InteractionCounter","interactionType":"https://schema.org/SubscribeAction","userInteractionCount":{{ .Site.Params.youtubeSubscribers }}}
@@ -66,7 +67,8 @@
     "sameAs":[
       {{ .Site.Params.channelURL | jsonify | safeJS }},
       {{ .Site.Params.instagramURL | jsonify | safeJS }},
-      {{ .Site.Params.facebookURL | jsonify | safeJS }}
+      {{ .Site.Params.facebookURL | jsonify | safeJS }},
+      {{ .Site.Params.pinterestURL | jsonify | safeJS }}
     ]
   }
 }

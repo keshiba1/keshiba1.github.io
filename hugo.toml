@@ -21,6 +21,7 @@ disableKinds = ["taxonomy", "term"]
   channelURL = "https://www.youtube.com/@jasminechoudhari"
   instagramURL = "https://www.instagram.com/jasmine.choudhari"
   facebookURL = "https://www.facebook.com/jasminechoudhari12"
+  pinterestURL = "https://www.pinterest.com/Jasmine_Choudhari"
   contactEmail = "collab@jasminechoudhari.com"
   youtubeSubscribers = 600000
   silverPlayButton = true
