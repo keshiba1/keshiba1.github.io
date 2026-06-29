@@ -14,6 +14,7 @@ Jasmine started creating because most home organization content online did not r
 - [YouTube](https://www.youtube.com/@jasminechoudhari)
 - [Instagram](https://www.instagram.com/jasmine.choudhari)
 - [Facebook](https://www.facebook.com/jasminechoudhari12)
+- [Pinterest](https://www.pinterest.com/Jasmine_Choudhari)
 
 ## Contact
 
