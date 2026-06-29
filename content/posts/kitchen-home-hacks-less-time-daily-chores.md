@@ -43,8 +43,6 @@ draft: false
 
 Summer is the hardest time to spend long hours in the kitchen. Between the heat and the extra cleaning the season brings, every shortcut counts. Here are 8 hacks — a mix of small useful buys and zero-cost ideas — that genuinely reduce daily effort in the kitchen and around the home.
 
-{{< youtube hgPfsSFTMfc >}}
-
 ## 1. Aluminium Stretch Covers — A Universal Lid That Fits Everything
 
 The problem: lids that never fit, food that dries out in the fridge, half-cut fruits with nothing to cover them properly. One product fixes all of this — **aluminium stretch covers**.
