@@ -16,8 +16,9 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+    <a class="site-title" href="{{ "/" | relURL }}">{{ .Site.Title }} — Kitchen &amp; Home Organization</a>
     <nav>
+      <a href="{{ "/" | relURL }}">Home</a>
       <a href="{{ "/posts/" | relURL }}">Posts</a>
       <a href="{{ "/about/" | relURL }}">About</a>
       <a href="{{ .Site.Params.channelURL }}" rel="me noopener">YouTube</a>

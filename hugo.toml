@@ -15,6 +15,7 @@ disableKinds = ["taxonomy", "term"]
 [params]
   description = "Practical Indian kitchen and home organization for homemakers — kitchen ideas, cleaning routines, storage, and ₹0 hacks by Jasmine Choudhari."
   seoTagline = "Indian Kitchen & Home Organization Tips"
+  ogTagline = "Jasmine Choudhari — Indian kitchen & home organization creator with almost 800K followers. Simple storage ideas, cleaning routines, and ₹0 hacks for real Indian homes."
   authorName = "Jasmine Choudhari"
   authorPhoto = "/images/jasmine-silver-play-button.jpg"
   channelHandle = "@jasminechoudhari"

@@ -1,6 +1,8 @@
 {{- $desc := or .Description .Site.Params.description -}}
+{{- if .IsHome -}}{{ $desc = .Site.Params.ogTagline | default $desc -}}{{- end -}}
 {{- $img := "" -}}
 {{- with .Params.youtube -}}{{ $img = .thumbnail }}{{- end -}}
+{{- if not $img -}}{{ $img = printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) .Site.Params.authorPhoto -}}{{- end -}}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ .Title | default .Site.Title }}">
 <meta property="og:description" content="{{ $desc }}">
