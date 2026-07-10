@@ -5,6 +5,32 @@
   <p class="post-meta">
     {{ if .Params.tips_guide }}<strong class="tips-guide-badge">Tips Guide</strong> · {{ end }}By <a href="/about/">{{ .Site.Params.authorName }}</a> · 600K+ YouTube subscribers · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
   </p>
+  <button type="button" class="save-post-btn" id="save-post-btn"
+          data-url="{{ .RelPermalink }}" data-title="{{ .Title | plainify }}" data-date="{{ .Date.Format "2006-01-02" }}">
+    🔖 Save this post
+  </button>
+  <script>
+  (function () {
+    var KEY = 'jc_saved_posts';
+    var btn = document.getElementById('save-post-btn');
+    var url = btn.dataset.url, title = btn.dataset.title, date = btn.dataset.date;
+    function load() { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; } }
+    function save(list) { try { localStorage.setItem(KEY, JSON.stringify(list)); } catch (e) {} }
+    function isSaved() { return load().some(function (p) { return p.url === url; }); }
+    function render() {
+      if (isSaved()) { btn.textContent = '✅ Saved'; btn.classList.add('is-saved'); }
+      else { btn.textContent = '🔖 Save this post'; btn.classList.remove('is-saved'); }
+    }
+    btn.addEventListener('click', function () {
+      var list = load();
+      if (isSaved()) { list = list.filter(function (p) { return p.url !== url; }); }
+      else { list.unshift({ url: url, title: title, date: date }); }
+      save(list);
+      render();
+    });
+    render();
+  })();
+  </script>
   {{ end }}
 
   {{ .Content }}
