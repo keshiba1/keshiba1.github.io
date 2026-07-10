@@ -26,6 +26,10 @@
       <a href="{{ .Site.Params.facebookURL }}" rel="me noopener">Facebook</a>
       <a href="{{ .Site.Params.pinterestURL }}" rel="me noopener">Pinterest</a>
     </nav>
+    <form class="search-box" action="{{ "/search/" | relURL }}" method="get" role="search">
+      <input type="search" name="q" placeholder="Search posts..." aria-label="Search posts" autocomplete="off">
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
   </header>
   <main>
     {{ block "main" . }}{{ end }}

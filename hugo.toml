@@ -32,13 +32,19 @@ disableKinds = ["taxonomy", "term"]
   ga4Id = "G-DC731J287B"
 
 [outputs]
-  home = ["HTML", "RSS", "LLMS"]
+  home = ["HTML", "RSS", "LLMS", "SEARCHINDEX"]
   page = ["HTML"]
   section = ["HTML", "RSS"]
 
 [outputFormats.LLMS]
   mediaType = "text/plain"
   baseName = "llms"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.SEARCHINDEX]
+  mediaType = "application/json"
+  baseName = "search-index"
   isPlainText = true
   notAlternative = true
 

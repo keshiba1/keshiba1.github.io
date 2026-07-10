@@ -1,0 +1,91 @@
+{{ define "main" }}
+<section class="search-page">
+  <h1>Search posts</h1>
+  <p class="post-meta">Type a keyword — kitchen, wardrobe, storage, budget, cleaning, decluttering — to find relevant posts.</p>
+
+  <form class="search-box search-box-large" id="search-form" role="search">
+    <input type="search" id="search-input" name="q" placeholder="Search e.g. kitchen storage, wardrobe, budget hacks..." autofocus autocomplete="off">
+    <button type="submit" aria-label="Search">🔍</button>
+  </form>
+
+  <ul class="post-list" id="search-results"></ul>
+  <p id="search-status" class="post-meta"></p>
+</section>
+
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var input = document.getElementById('search-input');
+  var results = document.getElementById('search-results');
+  var status = document.getElementById('search-status');
+  var initialQ = params.get('q') || '';
+  input.value = initialQ;
+
+  var indexData = null;
+  function loadIndex() {
+    if (indexData) return Promise.resolve(indexData);
+    return fetch('/search-index.json').then(function (r) { return r.json(); }).then(function (d) {
+      indexData = d;
+      return d;
+    });
+  }
+
+  function score(post, terms) {
+    var s = 0;
+    var title = (post.title || '').toLowerCase();
+    var desc = (post.description || '').toLowerCase();
+    var tags = (post.tags || []).join(' ').toLowerCase();
+    var cats = (post.categories || []).join(' ').toLowerCase();
+    terms.forEach(function (t) {
+      if (!t) return;
+      if (title.includes(t)) s += 5;
+      if (tags.includes(t)) s += 3;
+      if (cats.includes(t)) s += 3;
+      if (desc.includes(t)) s += 1;
+    });
+    return s;
+  }
+
+  function render(q) {
+    results.innerHTML = '';
+    if (!q.trim()) { status.textContent = ''; return; }
+    loadIndex().then(function (posts) {
+      var terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+      var matches = posts
+        .map(function (p) { return { post: p, s: score(p, terms) }; })
+        .filter(function (m) { return m.s > 0; })
+        .sort(function (a, b) {
+          if (b.s !== a.s) return b.s - a.s;
+          return a.post.date < b.post.date ? 1 : -1;
+        });
+      status.textContent = matches.length
+        ? matches.length + ' post' + (matches.length === 1 ? '' : 's') + ' found'
+        : 'No posts found for "' + q + '". Try a different keyword.';
+      matches.forEach(function (m) {
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.href = m.post.url;
+        a.textContent = m.post.title;
+        var time = document.createElement('time');
+        time.textContent = m.post.date;
+        li.appendChild(a);
+        li.appendChild(time);
+        results.appendChild(li);
+      });
+    });
+  }
+
+  document.getElementById('search-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var q = input.value;
+    var url = new URL(location.href);
+    url.searchParams.set('q', q);
+    history.replaceState(null, '', url);
+    render(q);
+  });
+  input.addEventListener('input', function () { render(input.value); });
+
+  if (initialQ) render(initialQ);
+})();
+</script>
+{{ end }}
