@@ -20,7 +20,7 @@ youtube:
   id: 3jtN-uofAfY
   url: https://www.youtube.com/watch?v=3jtN-uofAfY
   duration_iso: PT11M3S
-  thumbnail: https://i.ytimg.com/vi/3jtN-uofAfY/hqdefault.jpg
+  thumbnail: https://i.ytimg.com/vi/3jtN-uofAfY/maxresdefault.jpg
   published_at: '2021-08-22T09:28:50Z'
   source_title: New Amazing Kitchen Organizational Ideas| Huge Amazon Haul|Best Kitchen Countertop Organization Tips
 faqs:
