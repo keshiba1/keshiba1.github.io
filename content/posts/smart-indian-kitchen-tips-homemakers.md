@@ -12,7 +12,7 @@ tags:
 - kitchen-cleaning
 - food-storage
 categories:
-- Kitchen and Home Tips
+- kitchen-and-home-tips
 topic_clusters:
 - kitchen-and-home-tips
 - zero-cost-hacks
