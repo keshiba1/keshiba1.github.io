@@ -1,0 +1,80 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  <p class="post-meta">
+    <strong class="quick-take-badge">Quick Take</strong> · By <a href="/about/">{{ .Site.Params.authorName }}</a> · 600K+ YouTube subscribers · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+  </p>
+
+  {{ .Content }}
+
+  {{ with .Params.youtube }}
+  <h2>Watch the Short</h2>
+  <div class="youtube-embed youtube-embed-short">
+    <iframe id="yt-player-{{ .id }}" data-video-id="{{ .id }}"
+      src="https://www.youtube.com/embed/{{ .id }}?enablejsapi=1"
+      title="{{ $.Title }}"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen loading="lazy"></iframe>
+  </div>
+  {{ if and hugo.IsProduction site.Params.ga4Id }}
+  <script>
+    (function () {
+      var VIDEO_ID = "{{ .id }}";
+      var fired = false;
+      function ready(cb) {
+        if (window.YT && window.YT.Player) return cb();
+        if (!document.querySelector('script[src*="youtube.com/iframe_api"]')) {
+          var tag = document.createElement('script');
+          tag.src = "https://www.youtube.com/iframe_api";
+          document.head.appendChild(tag);
+        }
+        var prev = window.onYouTubeIframeAPIReady;
+        window.onYouTubeIframeAPIReady = function () {
+          if (typeof prev === 'function') { try { prev(); } catch (e) {} }
+          cb();
+        };
+      }
+      ready(function () {
+        try {
+          new YT.Player('yt-player-' + VIDEO_ID, {
+            events: {
+              'onStateChange': function (e) {
+                if (fired) return;
+                if (e.data === YT.PlayerState.PLAYING) {
+                  fired = true;
+                  try { gtag('event', 'yt_play', { video_id: VIDEO_ID, watch_type: 'embed' }); } catch (err) {}
+                }
+              }
+            }
+          });
+        } catch (err) {}
+      });
+    })();
+  </script>
+  {{ end }}
+  {{ end }}
+
+  {{ with .Params.faqs }}
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    {{ range . }}
+    <h3>{{ .q }}</h3>
+    <p>{{ .a }}</p>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <hr>
+  <section class="about-author">
+    <img src="/images/jasmine-silver-play-button.jpg"
+         alt="Jasmine Choudhari with her YouTube Silver Play Button for 100,000 subscribers"
+         width="160" height="160"
+         loading="lazy"
+         class="author-photo">
+    <div>
+      <h2>About Jasmine Choudhari</h2>
+      <p>Jasmine Choudhari shares practical, no-frills ideas for organising small Indian kitchens and homes. Follow her on <a href="{{ .Site.Params.channelURL }}" rel="me noopener">YouTube</a> (600K+ subscribers · Silver Play Button), <a href="{{ .Site.Params.instagramURL }}" rel="me noopener">Instagram</a>, <a href="{{ .Site.Params.facebookURL }}" rel="me noopener">Facebook</a> and <a href="{{ .Site.Params.pinterestURL }}" rel="me noopener">Pinterest</a>. For collaborations: <a href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a>.</p>
+    </div>
+  </section>
+</article>
+{{ end }}

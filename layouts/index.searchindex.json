@@ -1,6 +1,6 @@
-{{- $posts := where .Site.RegularPages "Section" "posts" -}}
+{{- $items := where .Site.RegularPages "Section" "in" (slice "posts" "quick-takes") -}}
 [
-{{- range $i, $p := $posts -}}
+{{- range $i, $p := $items -}}
   {{- if $i }},{{ end }}
   {
     "title": {{ $p.Title | jsonify }},
@@ -8,6 +8,7 @@
     "description": {{ ($p.Description | default "") | jsonify }},
     "tags": {{ ($p.Params.tags | default slice) | jsonify }},
     "categories": {{ ($p.Params.categories | default slice) | jsonify }},
+    "type": {{ (cond (eq $p.Section "quick-takes") "Quick Take" "Post") | jsonify }},
     "date": {{ $p.Date.Format "2006-01-02" | jsonify }}
   }
 {{- end -}}

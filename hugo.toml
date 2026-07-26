@@ -57,6 +57,7 @@ disableKinds = ["taxonomy", "term"]
 
 [permalinks]
   posts = "/posts/:slug/"
+  quick-takes = "/quick-takes/:slug/"
 
 [taxonomies]
   tag = "tags"
