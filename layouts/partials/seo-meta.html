@@ -2,10 +2,10 @@
 {{- if .IsHome -}}{{ $desc = .Site.Params.ogTagline | default $desc -}}{{- end -}}
 {{- $img := "" -}}
 {{- with .Params.youtube -}}{{ $img = .thumbnail }}{{- end -}}
-{{- if not $img -}}{{ $img = printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) .Site.Params.authorPhoto -}}{{- end -}}
-{{- /* WhatsApp/FB need explicit image dimensions to render a preview reliably. Sizes are known:
-       YouTube maxres = 1280x720, hq = 480x360, sd = 640x480; fallback author photo = 900x1000. */ -}}
-{{- $imgw := "900" -}}{{- $imgh := "1000" -}}
+{{- if not $img -}}{{ $img = printf "%s%s" (strings.TrimRight "/" .Site.BaseURL) "/images/og-home.jpg" -}}{{- end -}}
+{{- /* WhatsApp/FB render a preview reliably only for LANDSCAPE images with declared dimensions.
+       YouTube maxres = 1280x720, hq = 480x360, sd = 640x480; the fallback share image is 1200x630. */ -}}
+{{- $imgw := "1200" -}}{{- $imgh := "630" -}}
 {{- if strings.Contains $img "maxresdefault" -}}{{ $imgw = "1280" }}{{ $imgh = "720" }}
 {{- else if strings.Contains $img "sddefault" -}}{{ $imgw = "640" }}{{ $imgh = "480" }}
 {{- else if or (strings.Contains $img "hqdefault") (strings.Contains $img "ytimg.com") -}}{{ $imgw = "480" }}{{ $imgh = "360" }}
